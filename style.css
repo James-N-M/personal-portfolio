@@ -3,10 +3,6 @@ html, body{
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-}
-
 h1 {
     font-size:  36px;
     margin: 0;
@@ -15,6 +11,9 @@ h1 {
 h2 {
     text-align: center;
     margin-top: 60px;
+    color: teal;
+    font-weight: 500;
+    margin: 60px;
 }
 
 span {
@@ -28,17 +27,15 @@ footer {
     align-items: center;
     justify-content: space-around;
     color: white;
+    min-height: 110px;
 }
 #navbar {
-    background-color: #DACABA;;
-    z-index: 10;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-wrap: wrap;
-    height: 3rem;
-    
-
+    min-height: 4rem;
+    top: 0;
+    background-color: #DACABA;;
 }
 
 #welcome-section {
@@ -53,15 +50,21 @@ footer {
 #footer-paragraph {
     margin-top: 0px;
 }
+
+#created-for-link {
+    color: white;
+    text-decoration: underline;
+}
+
 .green {
     color: #43a047;
 }
 
 .row-circles {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 900px;
+    width: 100%;
     margin-top: 60px;
 }
 
@@ -69,7 +72,6 @@ footer {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 50px;
 }
 
 .circle {
@@ -82,6 +84,7 @@ footer {
     align-items: center;
     background-color: white;
     color: green;
+    margin: 10px;
 }
 
 .circle:hover {
@@ -101,22 +104,44 @@ a.nav-link {
     color: #FFF;
     font-size: 20px; 
     margin-right: 100px;
-    margin-top: 20px;
+    text-decoration: none;
 }
 
 .project-tile {
     width: 300px;
-    border: solid teal 3px;
+    border: solid lightseagreen 2px;
+    margin-bottom: 70px;
 }
 
 .project-tile-image {
     width: 300px;
+    height: 180px;
 }
 
 .project-tile-text {
-    border: solid teal 1px;
+    border-top: solid lightseagreen 1px;
     text-align: center;
     color: teal;
-    font: bold;
 }
+
+.sticky {
+    position: sticky;
+    z-index: 10;
+}
+
+.footer-paragraph {
+    margin: 15px;
+    line-height: 30px;
+    font-weight: 900px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    #navbar {
+        justify-content: space-evenly;
+    }
+    a.nav-link {
+        margin-right: 0;
+    }
+} 
 
