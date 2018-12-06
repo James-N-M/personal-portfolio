@@ -3,9 +3,14 @@ html, body{
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     font-size:  36px;
     margin: 0;
+    text-align: center;
 }
 
 h2 {
@@ -18,6 +23,8 @@ h2 {
 
 span {
     font-size: 18px;
+    text-align: center;
+    color: green;
 }
 
 footer {
@@ -40,6 +47,15 @@ footer {
 
 #welcome-section {
     height: 100vh;
+    background-color: #DACABA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {
+    height: 90vh;
     background-color: #DACABA;
     display: flex;
     flex-direction: column;
@@ -78,12 +94,12 @@ footer {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: solid black 1px;
+    border: solid green 1px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    color: green;
+    background-color: #DACABA;
+    color: teal;
     margin: 10px;
 }
 
@@ -108,14 +124,14 @@ a.nav-link {
 }
 
 .project-tile {
-    width: 300px;
+    width: 280px;
     border: solid lightseagreen 2px;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
 }
 
 .project-tile-image {
-    width: 300px;
-    height: 180px;
+    width: 280px;
+    height: 160px;
 }
 
 .project-tile-text {
