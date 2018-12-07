@@ -1,4 +1,4 @@
-html, body{
+html, body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
@@ -36,6 +36,7 @@ footer {
     color: white;
     min-height: 110px;
 }
+
 #navbar {
     display: flex;
     justify-content: flex-end;
@@ -55,7 +56,7 @@ footer {
 }
 
 #contact {
-    height: 90vh;
+    height: 80vh;
     background-color: #DACABA;
     display: flex;
     flex-direction: column;
@@ -72,8 +73,8 @@ footer {
     text-decoration: underline;
 }
 
-.green {
-    color: #43a047;
+#show-all-button {
+   
 }
 
 .row-circles {
@@ -91,13 +92,13 @@ footer {
 }
 
 .circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
     border: solid green 1px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     background-color: #DACABA;
     color: teal;
     margin: 10px;
@@ -107,20 +108,10 @@ footer {
     background-color: darkgray;
 }
 
-.section-header-center{
-    background-color: #DACABA;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 a.nav-link {
     color: #FFF;
     font-size: 20px; 
     margin-right: 100px;
-    text-decoration: none;
 }
 
 .project-tile {
@@ -148,7 +139,6 @@ a.nav-link {
 .footer-paragraph {
     margin: 15px;
     line-height: 30px;
-    font-weight: 900px;
     text-align: center;
 }
 
@@ -158,6 +148,11 @@ a.nav-link {
     }
     a.nav-link {
         margin-right: 0;
+    }
+    #contact {
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 15px;
     }
 } 
 
