@@ -74,7 +74,15 @@ footer {
 }
 
 #show-all-button {
-   
+   padding: 15px 75px;
+   border-radius: 3%; 
+   font-size: 16px;
+   color: green;
+   font-weight: 600;
+   border: solid 2px teal;
+   background-color: #DACABA;
+   margin-bottom: 50px;
+
 }
 
 .row-circles {
