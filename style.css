@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * This injects Tailwind's base styles, which is a combination of
  * Normalize.css and some additional base styles.
@@ -52,6 +53,11 @@ main {
 h1 {
   font-size: 2em;
   margin: .67em 0;
+=======
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+>>>>>>> 8f0ec5200753f89e1c50553ce9001e4386f50f1f
 }
 
 /* Grouping content
@@ -572,12 +578,21 @@ footer {
 }
 
 #contact {
+<<<<<<< HEAD
   height: 80vh;
   background-color: #dacaba;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+=======
+    height: 80vh;
+    background-color: #DACABA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+>>>>>>> 8f0ec5200753f89e1c50553ce9001e4386f50f1f
 }
 
 #footer-paragraph {
@@ -590,6 +605,7 @@ footer {
 }
 
 #show-all-button {
+<<<<<<< HEAD
   padding: 15px 75px;
   border-radius: 3%;
   font-size: 16px;
@@ -603,6 +619,21 @@ footer {
 #show-all-button-row {
   display: flex;
   justify-content: center;
+=======
+   padding: 15px 75px;
+   border-radius: 3%; 
+   font-size: 16px;
+   color: green;
+   font-weight: 600;
+   border: solid 2px teal;
+   background-color: #DACABA;
+   margin-bottom: 50px;
+}
+
+#show-all-button-row {
+    display: flex;
+    justify-content: center;
+>>>>>>> 8f0ec5200753f89e1c50553ce9001e4386f50f1f
 }
 
 .row-circles {
@@ -620,6 +651,7 @@ footer {
 }
 
 .circle {
+<<<<<<< HEAD
   border: solid green 1px;
   display: flex;
   justify-content: center;
@@ -640,6 +672,28 @@ a.nav-link {
   color: #fff;
   font-size: 20px;
   margin-right: 100px;
+=======
+    border: solid green 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    color: green;
+    margin: 10px;
+}
+
+.circle:hover {
+    background-color: darkgray;
+}
+
+a.nav-link {
+    color: #FFF;
+    font-size: 20px; 
+    margin-right: 100px;
+>>>>>>> 8f0ec5200753f89e1c50553ce9001e4386f50f1f
 }
 
 .project-tile {
@@ -666,6 +720,7 @@ a.nav-link {
 }
 
 .footer-paragraph {
+<<<<<<< HEAD
   margin: 15px;
   line-height: 30px;
   text-align: center;
@@ -814,6 +869,26 @@ a.nav-link {
 .bg-red-dark {
   background-color: #cc1f1a;
 }
+=======
+    margin: 15px;
+    line-height: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    #navbar {
+        justify-content: space-evenly;
+    }
+    a.nav-link {
+        margin-right: 0;
+    }
+    #contact {
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 15px;
+    }
+} 
+>>>>>>> 8f0ec5200753f89e1c50553ce9001e4386f50f1f
 
 .bg-red {
   background-color: #e3342f;
