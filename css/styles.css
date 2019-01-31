@@ -1,0 +1,224 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/preflight";
+ */
+@tailwind preflight;
+
+/**
+ * This injects any component classes registered by plugins.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/components";
+ */
+
+html, body {
+ font-family: 'Montserrat', sans-serif;
+ margin: 0;
+}
+
+a {
+ text-decoration: none;
+}
+
+h1 {
+ font-size:  36px;
+ margin: 0;
+ text-align: center;
+}
+
+h2 {
+ text-align: center;
+ margin-top: 60px;
+ color: teal;
+ font-weight: 500;
+ margin: 60px;
+}
+
+span {
+ font-size: 18px;
+ text-align: center;
+ color: green;
+}
+
+footer {
+ background-color: teal;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-around;
+ color: white;
+ min-height: 110px;
+}
+
+#navbar {
+ top: 0;
+}
+
+#welcome-section {
+ background-image: url("https://source.unsplash.com/RA6vbIVis2Y");
+ background-size: cover;
+}
+
+#contact {
+ height: 80vh;
+ background-color: #DACABA;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+#footer-paragraph {
+ margin-top: 0px;
+}
+
+#created-for-link {
+ color: white;
+ text-decoration: underline;
+}
+
+#show-all-button {
+ padding: 15px 75px;
+ border-radius: 3%;
+ font-size: 16px;
+ color: green;
+ font-weight: 600;
+ border: solid 2px teal;
+ background-color: #DACABA;
+ margin-bottom: 50px;
+}
+
+#show-all-button-row {
+ display: flex;
+ justify-content: center;
+}
+
+.row-circles {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ width: 100%;
+ margin-top: 60px;
+}
+
+.row {
+ display: flex;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+}
+
+.circle {
+ border: solid green 1px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ background-color: white;
+ color: green;
+ margin: 10px;
+}
+
+.circle:hover {
+ background-color: darkgray;
+}
+
+a.nav-link {
+ color: #FFF;
+ font-size: 20px;
+ margin-right: 100px;
+}
+
+.project-tile {
+ width: 280px;
+ border: solid lightseagreen 2px;
+ margin-bottom: 90px;
+}
+
+.project-tile-image {
+ width: 280px;
+ height: 160px;
+}
+
+.project-tile-text {
+ border-top: solid lightseagreen 1px;
+ text-align: center;
+ color: teal;
+}
+
+.sticky {
+ position: sticky;
+ z-index: 10;
+}
+
+.footer-paragraph {
+ margin: 15px;
+ line-height: 30px;
+ text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+ #navbar {
+  justify-content: space-evenly;
+ }
+ a.nav-link {
+  margin-right: 0;
+ }
+ #contact {
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 15px;
+ }
+}
+
+@tailwind components;
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms";
+ */
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/utilities";
+ */
+@tailwind utilities;
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
