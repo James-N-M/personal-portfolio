@@ -19,43 +19,6 @@
  * @import "tailwindcss/components";
  */
 
-html, body {
- font-family: 'Montserrat', sans-serif;
- margin: 0;
-}
-
-a {
- text-decoration: none;
-}
-
-h1 {
- font-size:  36px;
- margin: 0;
- text-align: center;
-}
-
-h2 {
- text-align: center;
- color: #22292f;
- font-weight: 500;
- margin: 60px;
-}
-
-span {
- font-size: 18px;
- text-align: center;
- color: green;
-}
-
-footer {
- background-color: #22292f;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: space-around;
- color: white;
- min-height: 110px;
-}
 
 #navbar {
  top: 0;
@@ -72,76 +35,10 @@ footer {
   width: 300px;
 }
 
-#contact {
- height: 80vh;
- background-color: #DACABA;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
-}
-
-#footer-paragraph {
- margin-top: 0px;
-}
-
-#created-for-link {
- color: white;
- text-decoration: underline;
-}
-
-#show-all-button {
- padding: 15px 75px;
- border-radius: 3%;
- font-size: 16px;
- color: green;
- font-weight: 600;
- border: solid 2px #22292f;
- background-color: #DACABA;
- margin-bottom: 50px;
-}
-
-#show-all-button-row {
- display: flex;
- justify-content: center;
-}
-
-.row-circles {
- display: flex;
- justify-content: center;
- flex-wrap: wrap;
- width: 100%;
- margin-top: 60px;
-}
-
 .row {
  display: flex;
  justify-content: space-evenly;
  flex-wrap: wrap;
-}
-
-.circle {
- border: solid green 1px;
- display: flex;
- justify-content: center;
- align-items: center;
- width: 100px;
- height: 100px;
- border-radius: 50%;
- background-color: white;
- color: green;
- margin: 10px;
- padding: 75px;
-}
-
-.circle:hover {
- background-color: darkgray;
-}
-
-a.nav-link {
- color: #FFF;
- font-size: 20px;
- margin-right: 100px;
 }
 
 .project-tile {
@@ -164,26 +61,6 @@ a.nav-link {
 .sticky {
  position: sticky;
  z-index: 10;
-}
-
-.footer-paragraph {
- margin: 15px;
- line-height: 30px;
- text-align: center;
-}
-
-@media only screen and (max-width: 600px){
- #navbar {
-  justify-content: space-evenly;
- }
- a.nav-link {
-  margin-right: 0;
- }
- #contact {
-  height: auto;
-  padding-top: 50px;
-  padding-bottom: 15px;
- }
 }
 
 @tailwind components;
