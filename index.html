@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="james-peace-sign-favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/james-peace-sign-favicon.png" />
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -16,13 +16,13 @@
                 <a class="text-white p-4 sm:mr-8 no-underline" href="#About">About</a>
                 <a class="text-white p-4 sm:mr-8 no-underline" href="#Work">Work</a>
                 <a class="text-white p-4 sm:mr-8 no-underline" href="#Contact">Contact</a>
-                <a class="text-white  p-4 sm:mr-8 no-underline" href="#"><i class="fas fa-feather-alt"></i></a>
+                <a class="text-white  p-4 sm:mr-8 no-underline" href="https://linktr.ee/getsomemoore94"><i class="fas fa-feather-alt"></i></a>
             </div>
         </nav>
 
         <section id="welcome-section" class="flex flex-col items-center justify-center min-h-screen py-12">
 
-            <img class="h-64 rounded-full w-64 mb-8" src="profile-picture.jpg" alt="profile-pic">
+            <img class="h-64 rounded-full w-64 mb-8" src="images/profile-picture.jpg" alt="profile-pic">
 
             <h1 class="text-5xl text-white text-center">Hey, I'm James.</h1>
 
@@ -30,40 +30,43 @@
 
             <div class="flex flex-wrap justify-center mt-8 w-full">
                 <div class="bg-black h-24 w-24 sm:h-32 rounded-full sm:w-32 m-8 flex items-center justify-center">
-                    <i class="fa-instagram fab text-5xl text-pink-dark"></i>
+                    <a href="https://www.instagram.com/getsomemoore94/"><i class="fa-instagram fab text-5xl text-pink-dark"></i></a>
                 </div>
                 <div class="bg-black h-24 w-24 sm:h-32 rounded-full sm:w-32 m-8 flex items-center justify-center">
-                    <i class="fa-github fab text-5xl text-white-dark"></i>
+                    <a href="https://github.com/James-N-M"><i class="fa-github fab text-5xl text-white"></i></a>
                 </div>
                 <div class="bg-black h-24 w-24 sm:h-32 rounded-full sm:w-32 m-8 flex items-center justify-center">
-                    <i class="fa-codepen fab text-5xl text-orange-dark"></i>
+                    <a href="https://codepen.io/James_M0025/"><i class="fa-codepen fab text-5xl text-orange-dark"></i></a>
                 </div>
                 <div class="bg-black h-24 w-24 sm:h-32 rounded-full sm:w-32 m-8 flex items-center justify-center">
-                    <i class="fab fa-medium text-5xl text-green-dark"></i>
+                    <a href="https://medium.com/@jomesmoore"><i class="fab fa-medium text-5xl text-green-dark"></i></a>
                 </div>
             </div>
+            <span id="About"></span>
         </section>
 
         <section id="about-me" class="py-16">
             <div class="flex justify-center flex-wrap">
-                <div class="mr-12">
-                    <img class="w-64" src="profile-picture.jpg" alt="picture">
+                <div class="sm:mr-12">
+                    <img class="w-64" src="images/profile-picture.jpg" alt="picture">
                 </div>
                 <div class="sm:w-1/2 px-4 py-2">
                     <h3 class="text-4xl mb-4">About Me.</h3>
+                    <p class="leading-loose">I love meeting new people and working on cool stuff. I'm
+                        still trying to find that open source project im truly passionate about, I'm always
+                        looking for a opportunity to take these skills ive aquired and give back a little
+                    </p>
                     <p class="leading-loose mb-2">I have Bachelor Degree in Computer Science from the
                         University Of Windsor as well as a Advanced Diploma in Computer Systems Technology
                         from St.Clair College. I'm currently working for Flex-n-Gate Canada as we rework
                     and develop existing and new in house software solutions. Specifically the PLM tool
                     which tracks the lifecycle and all things included of the parts we build. Using
                     Laravel and Vue JS</p>
-                    <p class="leading-loose">I love meeting new people and working on cool stuff. I'm
-                    still trying to find that open source project im truly passionate about, I'm always
-                    looking for a opportunity to take these skills ive aquired and give back a little</p>
                 </div>
             </div>
         </section>
 
+        <span id="Work"></span>
         <section id="projects">
             <h2 class="font-bold m-16 text-center">These are some of my projects...</h2>
 
@@ -139,13 +142,13 @@
                 </a>
             </div>
 
-            <h2 class="font-bold m-16 text-center">Back End</h2>
+            <h2 class="font-bold mb-16 text-center">Back End</h2>
 
             <div class="row">
                 <a class="no-underline" href="https://github.com/James-N-M/book-database">
                     <div class="project-tile">
                         <div>
-                            <img class="project-tile-image" src="https://via.placeholder.com/280" alt="Book Database">
+                            <img class="project-tile-image" src="images/book-database-app.gif" alt="Book Database">
                         </div>
                         <div class="project-tile-text">
                             <h3>Book Database</h3>
@@ -156,13 +159,17 @@
 
         </section>
 
-        <section class="flex flex-col items-center justify-center pb-32" id="contact">
+        <span id="Contact"></span>
+        <section class="flex flex-col items-center justify-center pb-16">
             <h1>Lets work together...</h1>
             <span class="text-black">I look forward to hearing from you !</span>
+            <div class="bg-black h-24 w-24 sm:h-32 rounded-full sm:w-32 mt-8 flex items-center justify-center">
+                <a href="mailto:jamesm0025@gmail.com"><i class="far fa-envelope text-5xl text-white"></i></a>
+            </div>
         </section>
 
         <footer class="bg-black flex flex-col h-32 items-center justify-center text-white">
-            <p class="m-2 leading-loose">thanks for checking in :)</p>
+            <p class="m-2 leading-loose"><i class="fas fa-terminal"></i> thanks for checking in</p>
             <p class="mt-0">&copy; James Moore</p>
         </footer>
 
