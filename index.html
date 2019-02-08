@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/x-icon" href="james-peace-sign-favicon.png" />
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -12,52 +11,55 @@
 </head>
 <body>
     <main>
-        <nav id="navbar" class="bg-black flex items-center justify-end min-h-4 h-16 sticky">
-            <a class="text-white text-2xl mr-16 no-underline" href="#About">About</a>
-            <a class="text-white text-2xl mr-16 no-underline" href="#Work">Work</a>
-            <a class="text-white text-2xl mr-16 no-underline" href="#Contact">Contact</a>
-            <a class="text-white text-2xl mr-16 no-underline" href="#"><i class="fas fa-feather-alt"></i></a>
+        <nav id="navbar" class="bg-black flex items-center justify-end sticky">
+            <div class="flex items-center justify-around sm:justify-end sm:text-2xl text-xl w-full">
+                <a class="text-white p-4 sm:mr-8 no-underline" href="#About">About</a>
+                <a class="text-white p-4 sm:mr-8 no-underline" href="#Work">Work</a>
+                <a class="text-white p-4 sm:mr-8 no-underline" href="#Contact">Contact</a>
+                <a class="text-white  p-4 sm:mr-8 no-underline" href="#"><i class="fas fa-feather-alt"></i></a>
+            </div>
         </nav>
 
-        <section id="welcome-section" class="flex flex-col h-screen items-center justify-center">
-            <div class="bg-black h-64 rounded-full w-64 mb-8">
-                <div class="bg-black"></div>
-            </div>
+        <section id="welcome-section" class="flex flex-col items-center justify-center min-h-screen py-12">
+
+            <img class="h-64 rounded-full w-64 mb-8" src="profile-picture.jpg" alt="profile-pic">
 
             <h1 class="text-5xl text-white text-center">Hey, I'm James.</h1>
 
             <span class="text-3xl text-white">a software developer</span>
 
-            <div class="flex mt-8">
-                <div class="bg-black h-32 rounded-full w-32 m-8 flex items-center justify-center">
+            <div class="flex flex-wrap justify-center mt-8 w-full">
+                <div class="bg-black h-24 w-24 sm:h-32 rounded-full sm:w-32 m-8 flex items-center justify-center">
                     <i class="fa-instagram fab text-5xl text-pink-dark"></i>
                 </div>
-                <div class="bg-black h-32 rounded-full w-32 m-8 flex items-center justify-center">
+                <div class="bg-black h-24 w-24 sm:h-32 rounded-full sm:w-32 m-8 flex items-center justify-center">
                     <i class="fa-github fab text-5xl text-white-dark"></i>
                 </div>
-                <div class="bg-black h-32 rounded-full w-32 m-8 flex items-center justify-center">
+                <div class="bg-black h-24 w-24 sm:h-32 rounded-full sm:w-32 m-8 flex items-center justify-center">
                     <i class="fa-codepen fab text-5xl text-orange-dark"></i>
                 </div>
-                <div class="bg-black h-32 rounded-full w-32 m-8 flex items-center justify-center">
+                <div class="bg-black h-24 w-24 sm:h-32 rounded-full sm:w-32 m-8 flex items-center justify-center">
                     <i class="fab fa-medium text-5xl text-green-dark"></i>
                 </div>
             </div>
         </section>
 
-        <section id="about-me" class="container m-16 pb-16">
-            <div class="flex justify-around">
-                <div class="w-64 bg-black">
-
+        <section id="about-me" class="m-16">
+            <div class="flex justify-center">
+                <div class="mr-12">
+                    <img class="w-64" src="profile-picture.jpg" alt="picture">
                 </div>
                 <div class="w-1/2">
                     <h3 class="text-4xl mb-4">About Me.</h3>
-                    <p class="leading-loose mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet velit diam.
-                        Aenean non dapibus turpis. Proin ac est congue, tempus leo vel, pulvinar mi. Etiam
-                        dapibus, diam in sollicitudin vehicula. </p>
-                    <p class="leading-loose">Yoo massa auctor tortor, et dapibus dui arcu ut ante. Nam luctus lectus in placerat euismod.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's
-                        standard dummy text ever since the 1500s.</p>
+                    <p class="leading-loose mb-2">I have Bachelor Degree in Computer Science from the
+                        University Of Windsor as well as a Advanced Diploma in Computer Systems Technology
+                        from St.Clair College. I'm currently working for Flex-n-Gate Canada as we rework
+                    and develop existing and new in house software solutions. Specifically the PLM tool
+                    which tracks the lifecycle and all things included of the parts we build. Using
+                    Laravel and Vue JS</p>
+                    <p class="leading-loose">I love meeting new people and working on cool stuff. I'm
+                    still trying to find that open source project im truly passionate about, I'm always
+                    looking for a opportunity to take these skills ive aquired and give back a little</p>
                 </div>
             </div>
         </section>
