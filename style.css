@@ -522,9 +522,44 @@ table {
  * @import "tailwindcss/components";
  */
 
+.flash {
+  -webkit-animation: flash linear 1s infinite;
+          animation: flash linear 1s infinite;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 #navbar {
   top: 0;
 }
+
+/* refactor to a class */
 
 #welcome-section {
   background-image: url("https://source.unsplash.com/RA6vbIVis2Y");
@@ -541,10 +576,6 @@ table {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-}
-
-.circle:hover {
-  background-color: darkgray;
 }
 
 .project-tile {
@@ -684,6 +715,10 @@ table {
 
 .bg-white {
   background-color: #fff;
+}
+
+.bg-white-dark {
+  background-color: #fdf9f9;
 }
 
 .bg-red-darkest {
@@ -978,6 +1013,10 @@ table {
   background-color: #fff;
 }
 
+.hover\:bg-white-dark:hover {
+  background-color: #fdf9f9;
+}
+
 .hover\:bg-red-darkest:hover {
   background-color: #3b0d0c;
 }
@@ -1268,6 +1307,10 @@ table {
 
 .focus\:bg-white:focus {
   background-color: #fff;
+}
+
+.focus\:bg-white-dark:focus {
+  background-color: #fdf9f9;
 }
 
 .focus\:bg-red-darkest:focus {
@@ -1634,6 +1677,10 @@ table {
   border-color: #fff;
 }
 
+.border-white-dark {
+  border-color: #fdf9f9;
+}
+
 .border-red-darkest {
   border-color: #3b0d0c;
 }
@@ -1926,6 +1973,10 @@ table {
   border-color: #fff;
 }
 
+.hover\:border-white-dark:hover {
+  border-color: #fdf9f9;
+}
+
 .hover\:border-red-darkest:hover {
   border-color: #3b0d0c;
 }
@@ -2216,6 +2267,10 @@ table {
 
 .focus\:border-white:focus {
   border-color: #fff;
+}
+
+.focus\:border-white-dark:focus {
+  border-color: #fdf9f9;
 }
 
 .focus\:border-red-darkest:focus {
@@ -4973,6 +5028,10 @@ table {
   color: #fff;
 }
 
+.text-white-dark {
+  color: #fdf9f9;
+}
+
 .text-red-darkest {
   color: #3b0d0c;
 }
@@ -5265,6 +5324,10 @@ table {
   color: #fff;
 }
 
+.hover\:text-white-dark:hover {
+  color: #fdf9f9;
+}
+
 .hover\:text-red-darkest:hover {
   color: #3b0d0c;
 }
@@ -5555,6 +5618,10 @@ table {
 
 .focus\:text-white:focus {
   color: #fff;
+}
+
+.focus\:text-white-dark:focus {
+  color: #fdf9f9;
 }
 
 .focus\:text-red-darkest:focus {
@@ -6298,6 +6365,10 @@ table {
     background-color: #fff;
   }
 
+  .sm\:bg-white-dark {
+    background-color: #fdf9f9;
+  }
+
   .sm\:bg-red-darkest {
     background-color: #3b0d0c;
   }
@@ -6590,6 +6661,10 @@ table {
     background-color: #fff;
   }
 
+  .sm\:hover\:bg-white-dark:hover {
+    background-color: #fdf9f9;
+  }
+
   .sm\:hover\:bg-red-darkest:hover {
     background-color: #3b0d0c;
   }
@@ -6880,6 +6955,10 @@ table {
 
   .sm\:focus\:bg-white:focus {
     background-color: #fff;
+  }
+
+  .sm\:focus\:bg-white-dark:focus {
+    background-color: #fdf9f9;
   }
 
   .sm\:focus\:bg-red-darkest:focus {
@@ -7238,6 +7317,10 @@ table {
     border-color: #fff;
   }
 
+  .sm\:border-white-dark {
+    border-color: #fdf9f9;
+  }
+
   .sm\:border-red-darkest {
     border-color: #3b0d0c;
   }
@@ -7530,6 +7613,10 @@ table {
     border-color: #fff;
   }
 
+  .sm\:hover\:border-white-dark:hover {
+    border-color: #fdf9f9;
+  }
+
   .sm\:hover\:border-red-darkest:hover {
     border-color: #3b0d0c;
   }
@@ -7820,6 +7907,10 @@ table {
 
   .sm\:focus\:border-white:focus {
     border-color: #fff;
+  }
+
+  .sm\:focus\:border-white-dark:focus {
+    border-color: #fdf9f9;
   }
 
   .sm\:focus\:border-red-darkest:focus {
@@ -10561,6 +10652,10 @@ table {
     color: #fff;
   }
 
+  .sm\:text-white-dark {
+    color: #fdf9f9;
+  }
+
   .sm\:text-red-darkest {
     color: #3b0d0c;
   }
@@ -10853,6 +10948,10 @@ table {
     color: #fff;
   }
 
+  .sm\:hover\:text-white-dark:hover {
+    color: #fdf9f9;
+  }
+
   .sm\:hover\:text-red-darkest:hover {
     color: #3b0d0c;
   }
@@ -11143,6 +11242,10 @@ table {
 
   .sm\:focus\:text-white:focus {
     color: #fff;
+  }
+
+  .sm\:focus\:text-white-dark:focus {
+    color: #fdf9f9;
   }
 
   .sm\:focus\:text-red-darkest:focus {
@@ -11872,6 +11975,10 @@ table {
     background-color: #fff;
   }
 
+  .md\:bg-white-dark {
+    background-color: #fdf9f9;
+  }
+
   .md\:bg-red-darkest {
     background-color: #3b0d0c;
   }
@@ -12164,6 +12271,10 @@ table {
     background-color: #fff;
   }
 
+  .md\:hover\:bg-white-dark:hover {
+    background-color: #fdf9f9;
+  }
+
   .md\:hover\:bg-red-darkest:hover {
     background-color: #3b0d0c;
   }
@@ -12454,6 +12565,10 @@ table {
 
   .md\:focus\:bg-white:focus {
     background-color: #fff;
+  }
+
+  .md\:focus\:bg-white-dark:focus {
+    background-color: #fdf9f9;
   }
 
   .md\:focus\:bg-red-darkest:focus {
@@ -12812,6 +12927,10 @@ table {
     border-color: #fff;
   }
 
+  .md\:border-white-dark {
+    border-color: #fdf9f9;
+  }
+
   .md\:border-red-darkest {
     border-color: #3b0d0c;
   }
@@ -13104,6 +13223,10 @@ table {
     border-color: #fff;
   }
 
+  .md\:hover\:border-white-dark:hover {
+    border-color: #fdf9f9;
+  }
+
   .md\:hover\:border-red-darkest:hover {
     border-color: #3b0d0c;
   }
@@ -13394,6 +13517,10 @@ table {
 
   .md\:focus\:border-white:focus {
     border-color: #fff;
+  }
+
+  .md\:focus\:border-white-dark:focus {
+    border-color: #fdf9f9;
   }
 
   .md\:focus\:border-red-darkest:focus {
@@ -16135,6 +16262,10 @@ table {
     color: #fff;
   }
 
+  .md\:text-white-dark {
+    color: #fdf9f9;
+  }
+
   .md\:text-red-darkest {
     color: #3b0d0c;
   }
@@ -16427,6 +16558,10 @@ table {
     color: #fff;
   }
 
+  .md\:hover\:text-white-dark:hover {
+    color: #fdf9f9;
+  }
+
   .md\:hover\:text-red-darkest:hover {
     color: #3b0d0c;
   }
@@ -16717,6 +16852,10 @@ table {
 
   .md\:focus\:text-white:focus {
     color: #fff;
+  }
+
+  .md\:focus\:text-white-dark:focus {
+    color: #fdf9f9;
   }
 
   .md\:focus\:text-red-darkest:focus {
@@ -17446,6 +17585,10 @@ table {
     background-color: #fff;
   }
 
+  .lg\:bg-white-dark {
+    background-color: #fdf9f9;
+  }
+
   .lg\:bg-red-darkest {
     background-color: #3b0d0c;
   }
@@ -17738,6 +17881,10 @@ table {
     background-color: #fff;
   }
 
+  .lg\:hover\:bg-white-dark:hover {
+    background-color: #fdf9f9;
+  }
+
   .lg\:hover\:bg-red-darkest:hover {
     background-color: #3b0d0c;
   }
@@ -18028,6 +18175,10 @@ table {
 
   .lg\:focus\:bg-white:focus {
     background-color: #fff;
+  }
+
+  .lg\:focus\:bg-white-dark:focus {
+    background-color: #fdf9f9;
   }
 
   .lg\:focus\:bg-red-darkest:focus {
@@ -18386,6 +18537,10 @@ table {
     border-color: #fff;
   }
 
+  .lg\:border-white-dark {
+    border-color: #fdf9f9;
+  }
+
   .lg\:border-red-darkest {
     border-color: #3b0d0c;
   }
@@ -18678,6 +18833,10 @@ table {
     border-color: #fff;
   }
 
+  .lg\:hover\:border-white-dark:hover {
+    border-color: #fdf9f9;
+  }
+
   .lg\:hover\:border-red-darkest:hover {
     border-color: #3b0d0c;
   }
@@ -18968,6 +19127,10 @@ table {
 
   .lg\:focus\:border-white:focus {
     border-color: #fff;
+  }
+
+  .lg\:focus\:border-white-dark:focus {
+    border-color: #fdf9f9;
   }
 
   .lg\:focus\:border-red-darkest:focus {
@@ -21709,6 +21872,10 @@ table {
     color: #fff;
   }
 
+  .lg\:text-white-dark {
+    color: #fdf9f9;
+  }
+
   .lg\:text-red-darkest {
     color: #3b0d0c;
   }
@@ -22001,6 +22168,10 @@ table {
     color: #fff;
   }
 
+  .lg\:hover\:text-white-dark:hover {
+    color: #fdf9f9;
+  }
+
   .lg\:hover\:text-red-darkest:hover {
     color: #3b0d0c;
   }
@@ -22291,6 +22462,10 @@ table {
 
   .lg\:focus\:text-white:focus {
     color: #fff;
+  }
+
+  .lg\:focus\:text-white-dark:focus {
+    color: #fdf9f9;
   }
 
   .lg\:focus\:text-red-darkest:focus {
@@ -23020,6 +23195,10 @@ table {
     background-color: #fff;
   }
 
+  .xl\:bg-white-dark {
+    background-color: #fdf9f9;
+  }
+
   .xl\:bg-red-darkest {
     background-color: #3b0d0c;
   }
@@ -23312,6 +23491,10 @@ table {
     background-color: #fff;
   }
 
+  .xl\:hover\:bg-white-dark:hover {
+    background-color: #fdf9f9;
+  }
+
   .xl\:hover\:bg-red-darkest:hover {
     background-color: #3b0d0c;
   }
@@ -23602,6 +23785,10 @@ table {
 
   .xl\:focus\:bg-white:focus {
     background-color: #fff;
+  }
+
+  .xl\:focus\:bg-white-dark:focus {
+    background-color: #fdf9f9;
   }
 
   .xl\:focus\:bg-red-darkest:focus {
@@ -23960,6 +24147,10 @@ table {
     border-color: #fff;
   }
 
+  .xl\:border-white-dark {
+    border-color: #fdf9f9;
+  }
+
   .xl\:border-red-darkest {
     border-color: #3b0d0c;
   }
@@ -24252,6 +24443,10 @@ table {
     border-color: #fff;
   }
 
+  .xl\:hover\:border-white-dark:hover {
+    border-color: #fdf9f9;
+  }
+
   .xl\:hover\:border-red-darkest:hover {
     border-color: #3b0d0c;
   }
@@ -24542,6 +24737,10 @@ table {
 
   .xl\:focus\:border-white:focus {
     border-color: #fff;
+  }
+
+  .xl\:focus\:border-white-dark:focus {
+    border-color: #fdf9f9;
   }
 
   .xl\:focus\:border-red-darkest:focus {
@@ -27283,6 +27482,10 @@ table {
     color: #fff;
   }
 
+  .xl\:text-white-dark {
+    color: #fdf9f9;
+  }
+
   .xl\:text-red-darkest {
     color: #3b0d0c;
   }
@@ -27575,6 +27778,10 @@ table {
     color: #fff;
   }
 
+  .xl\:hover\:text-white-dark:hover {
+    color: #fdf9f9;
+  }
+
   .xl\:hover\:text-red-darkest:hover {
     color: #3b0d0c;
   }
@@ -27865,6 +28072,10 @@ table {
 
   .xl\:focus\:text-white:focus {
     color: #fff;
+  }
+
+  .xl\:focus\:text-white-dark:focus {
+    color: #fdf9f9;
   }
 
   .xl\:focus\:text-red-darkest:focus {
