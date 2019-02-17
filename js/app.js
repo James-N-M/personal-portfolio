@@ -13,14 +13,21 @@ const fetchLatestRepositoryCommit = async (repo) => {
 }
 
 const formatCommitMessage = (commitObject) => {
-    let message = `${commitObject.commit.message}
-        <a class="bg-black text-white no-underline" href="${commitObject.html_url}">
-            #${trimString(commitObject.sha)}
+    let message = `${trimMessageString(commitObject.commit.message)}
+        <a class="bg-black text-white" href="${commitObject.html_url}">
+            #${trimShaString(commitObject.sha)}
         </a>`;
     return message;
 }
 
-const trimString = (string) => {
+const trimMessageString = (string) => {
+    if(string.length > 27) {
+        return string.substr(0,27) + "... ";
+    }
+    return string + "... ";
+}
+
+const trimShaString = (string) => {
     return string.substr(0,4);
 }
 
