@@ -562,7 +562,7 @@ table {
 /* refactor to a class */
 
 #welcome-section {
-  background-image: url("https://source.unsplash.com/RA6vbIVis2Y");
+  /* background-image: url("https://source.unsplash.com/RA6vbIVis2Y"); */
   background-size: cover;
 }
 

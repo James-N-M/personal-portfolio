@@ -228,5 +228,23 @@
 
     </main>
     <script src="js/app.js"></script>
+
+    <!-- Background bird animation stuff -->
+    <script src="js/three.r92.min.js"></script>
+    <script src="js/vanta.birds.min.js"></script>
+    <script>
+        VANTA.BIRDS(
+        {
+            el: "#welcome-section",
+            backgroundColor: "#F9F4EE",
+            color1: "#22292f",
+            color2: "#22292f",
+            wingSpan: 20.00,
+            speedLimit: 3.00,
+            separation: 75.00,
+            cohesion: 6.00,
+            quantity: 3.00
+        }); 
+    </script>
 </body>
 </html>
