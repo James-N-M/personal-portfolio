@@ -34,7 +34,6 @@ const trimShaString = (string) => {
 window.onload = function () {
     fetchLatestRepositoryCommit(repository).then((res) => {
         commit = res[0];
-        console.log(commit);
         commitMessageElement.innerHTML = formatCommitMessage(commit);
     });
 }
